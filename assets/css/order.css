@@ -1,0 +1,50 @@
+table {
+    /* width: 70%; */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#myTable {
+    table-layout: fixed;
+    /* table-layout: auto; */
+    /* width: 100%; */
+    min-width: 600px;
+}
+
+.editable input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+.currency {
+    text-align: center;
+}
+
+.currency .peso {
+    pointer-events: none;
+    color: #333;
+    margin-right: 2px;
+}
+
+.currency .amount {
+    display: inline-block;
+    outline: none;
+}
+
+.currency[contenteditable="true"] {
+    outline: none;
+}
